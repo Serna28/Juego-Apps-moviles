@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Juego_Disparos</string>
+
+    <string name="BTNLOGIN">LOGIN</string>
+    <string name="BTNREGISTRO">REGISTRO</string>
+
+    <string name="CorreoElectronico">Correo Electronico</string>
+    <string name="Contrasena">Contraseña</string>
+    <string name="Nombre">Nombre Usuario</string>
+    <string name="Registrar">Registrar</string>
+
+    <string name ="CorreoLogin">Correo Electronico</string>
+    <string name ="ContrasenaLogin">Contrasena</string>
+    <string name ="BtnLogin">Ingreso</string>
+
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "433542555803",
+    "project_id": "juego-disparos-upb",
+    "storage_bucket": "juego-disparos-upb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433542555803:android:59998d5a7012534fa17e3e",
+        "android_client_info": {
+          "package_name": "com.example.juego_disparos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433542555803-nqbic41i1nf3mpffqp72hdhp3qehvvdu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.juego_disparos",
+            "certificate_hash": "5d48501df92d40fb0caedf638bcffab775378837"
+          }
+        },
+        {
+          "client_id": "433542555803-csk00drcqputlepnd807s227hqtvqsm4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwms9NV8UfSyN83ZcHZU7ZxpewtmVrpME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433542555803-csk00drcqputlepnd807s227hqtvqsm4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
