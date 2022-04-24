@@ -60,7 +60,24 @@ public class Menu extends AppCompatActivity {
         BtnCerrar.setOnClickListener(view -> CerrarSesion());
 
 
-        BtnJugar.setOnClickListener(view -> Toast.makeText(Menu.this,"Jugar",Toast.LENGTH_SHORT).show());
+        BtnJugar.setOnClickListener(view -> {
+            Toast.makeText(Menu.this, "Jugar", Toast.LENGTH_SHORT).show();
+
+            Intent intent = new Intent(Menu.this, Escenario.class);
+
+            String UidS = uid.getText().toString();
+            String NombreS = nombre.getText().toString();
+            String ZombiesS = Zombies.getText().toString();
+
+            intent.putExtra("UID",UidS);
+            intent.putExtra("NOMBRE",NombreS);
+            intent.putExtra("ZOMBIE",ZombiesS);
+
+            startActivity(intent);
+            Toast.makeText(Menu.this,"Enviando",Toast.LENGTH_SHORT).show();
+
+
+        });
 
         BtnPuntuaciones.setOnClickListener(view -> Toast.makeText(Menu.this,"Puntuaciones",Toast.LENGTH_SHORT).show());
 

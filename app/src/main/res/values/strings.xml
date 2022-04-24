@@ -13,8 +13,8 @@
     <string name="ContrasenaLogin">Contrasena</string>
     <string name="BtnLogin">Ingreso</string>
 
-   <string name="Mipuntunaciontxt">Mi Puntunación</string>
-    <string name ="Zombies">  </string>
+    <string name="Mipuntunaciontxt">Mi Puntunación</string>
+    <string name="Zombies">  </string>
     <string name="uid">  </string>
     <string name="correo">  </string>
     <string name="nombre"> </string>
@@ -26,6 +26,11 @@
     <string name="BtnAcercaDe">Acerca De Nosotros</string>
 
     <string name="BtnCerrar">Cerrar Sesión</string>
+    
+    
+    <string name="TvContador"> 0 </string>
+    <string name="TvNombre"> --- </string>
+    <string name="TvTiempo"> 0s </string>
 
 
 </resources>
