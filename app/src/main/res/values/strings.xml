@@ -9,8 +9,8 @@
     <string name="Nombre">Nombre Usuario</string>
     <string name="Registrar">Registrar</string>
 
-    <string name ="CorreoLogin">Correo Electronico</string>
-    <string name ="ContrasenaLogin">Contrasena</string>
-    <string name ="BtnLogin">Ingreso</string>
+    <string name="CorreoLogin">Correo Electronico</string>
+    <string name="ContrasenaLogin">Contrasena</string>
+    <string name="BtnLogin">Ingreso</string>
 
 </resources>

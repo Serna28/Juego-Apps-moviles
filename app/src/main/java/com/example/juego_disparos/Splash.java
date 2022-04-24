@@ -19,7 +19,7 @@ public class Splash extends AppCompatActivity {
             public void run() {
 
                 //Este codigo se ejecutara en una cantidad de segundos que definiremos
-                Intent intent = new Intent(Splash.this,MainActivity.class);
+                Intent intent = new Intent(Splash.this,Menu.class);
                 startActivity(intent);
             }
             //Osea 1.5 segundos
