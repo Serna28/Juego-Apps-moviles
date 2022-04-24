@@ -14,16 +14,18 @@
     <string name="BtnLogin">Ingreso</string>
 
    <string name="Mipuntunaciontxt">Mi Puntunación</string>
-    <string name ="Zombies"> -- </string>
-    <string name="uid"> -- </string>
-    <string name="correo"> -- </string>
-    <string name="nombre"> -- </string>
+    <string name ="Zombies">  </string>
+    <string name="uid">  </string>
+    <string name="correo">  </string>
+    <string name="nombre"> </string>
 
     <string name="Menutxt">Menú</string>
 
     <string name="BtnJugar">Jugar</string>
     <string name="BtnPuntuaciones">Puntuaciones</string>
     <string name="BtnAcercaDe">Acerca De Nosotros</string>
+
+    <string name="BtnCerrar">Cerrar Sesión</string>
 
 
 </resources>

@@ -85,9 +85,9 @@ public class Registro extends AppCompatActivity {
                     HashMap<Object,Object>DatosJugador = new HashMap<>();
 
                     DatosJugador.put("Uid",uidString);
-                    DatosJugador.put("email",uidString);
-                    DatosJugador.put("password",uidString);
-                    DatosJugador.put("Nombre",uidString);
+                    DatosJugador.put("email",CorreoString);
+                    DatosJugador.put("password",PassString);
+                    DatosJugador.put("Nombre",NomString);
                     DatosJugador.put("Zombie",contador);
 
                     FirebaseDatabase database = FirebaseDatabase.getInstance();
