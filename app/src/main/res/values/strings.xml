@@ -26,14 +26,22 @@
     <string name="BtnAcercaDe">Acerca De Nosotros</string>
 
     <string name="BtnCerrar">Cerrar Sesión</string>
-    
-    
+
+
     <string name="TvContador"> 0 </string>
     <string name="TvNombre"> --- </string>
     <string name="TvTiempo"> 0s </string>
 
     <string name="TvAncho"> -- </string>
     <string name="TvAlto"> -- </string>
+    
+    <string name="SeAcabotxt"> Se acabó el tiempo </string>
+    <string name="Hasmatadotxt"> Has Matado </string>
+    <string name="Numerotxt"> -- </string>
+    <string name="Reintentar"> Reintentar </string>
+    <string name="IrMenu"> Menú </string>
+    <string name="Puntajes"> Ver Puntaje </string>
+
 
 
 </resources>

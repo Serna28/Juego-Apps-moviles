@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="700dp"
+    android:layout_gravity="center"
+    android:background="@color/purple_700"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/SeAcabotxt"
+        android:text="@string/SeAcabotxt"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Hasmatadotxt"
+        android:text="@string/Hasmatadotxt"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Numerotxt"
+        android:text="@string/Numerotxt"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <!--ANIMACIÓN-->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="finjuego.json"
+        app:lottie_imageAssetsFolder="assets"
+        app:lottie_loop="true" />
+
+    <Button
+        android:id="@+id/Reintentar"
+        android:text="@string/Reintentar"
+        android:background="@drawable/botonpersonalizado"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <Button
+        android:id="@+id/IrMenu"
+        android:text="@string/IrMenu"
+        android:background="@drawable/botonpersonalizado"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <Button
+        android:id="@+id/Puntajes"
+        android:text="@string/Puntajes"
+        android:background="@drawable/botonpersonalizado"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -12,22 +12,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        
+
         <TextView
             android:id="@+id/TvAlto"
-            android:textColor="@color/white"
-            android:text="@string/TvAlto"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:text="@string/TvAlto"
+            android:textColor="@color/white">
 
         </TextView>
 
         <TextView
             android:id="@+id/TvAncho"
-            android:textColor="@color/white"
-            android:text="@string/TvAncho"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:text="@string/TvAncho"
+            android:textColor="@color/white">
 
         </TextView>
 
@@ -51,9 +51,9 @@
             <TextView
                 android:id="@+id/TvContador"
                 android:layout_width="60dp"
-                android:gravity="center"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:gravity="center"
                 android:text="@string/TvContador"
                 android:textColor="@color/white"
                 android:textSize="20sp">
@@ -88,7 +88,7 @@
                 android:layout_margin="10dp"
                 android:text="@string/TvTiempo"
                 android:textColor="@color/white"
-                android:textSize="20sp">
+                android:textSize="15sp">
 
             </TextView>
 

@@ -4,15 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.graphics.Point;
+import android.graphics.Typeface;
 import android.media.Image;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.view.Display;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.lang.reflect.Type;
 import java.util.Random;
 
 public class Escenario extends AppCompatActivity {
@@ -42,7 +45,7 @@ public class Escenario extends AppCompatActivity {
         TvTiempo = findViewById(R.id.TvTiempo);
 
         miDialog = new Dialog(Escenario.this);
-        
+
 
 
         IvZombie = findViewById(R.id.IvZombie);
@@ -70,24 +73,28 @@ public class Escenario extends AppCompatActivity {
 
                 //Cambia la imagen del zombie normal al zombie mongolo
 
-                contador++;
-                TvContador.setText(String.valueOf(contador));
+                if (!GameOver)
+                {
 
-                IvZombie.setImageResource(R.drawable.zomiegolpeado);
+                    contador++;
+                    TvContador.setText(String.valueOf(contador));
 
-                //Volver a la iamgen normal del zombie
+                    IvZombie.setImageResource(R.drawable.zomiegolpeado);
 
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
+                    //Volver a la iamgen normal del zombie
 
-                        IvZombie.setImageResource(R.drawable.zombienormal);
-                        Movimiento();
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+
+                            IvZombie.setImageResource(R.drawable.zombienormal);
+                            Movimiento();
 
 
-                    }
-                },500);
+                        }
+                    }, 500);
 
+                }
             }
         });
 
@@ -147,8 +154,40 @@ public class Escenario extends AppCompatActivity {
 
             public void onFinish() {
                 TvTiempo.setText("0s");
+                GameOver = true;
+                MensajeGameOver();
             }
         }.start();
+
+    }
+
+    private void MensajeGameOver() {
+
+
+        
+        TextView SeAcabotxt,Hasmatadotxt,Numerotxt;
+        Button Reintentar,IrMenu,Puntajes;
+
+        miDialog.setContentView(R.layout.activity_gameover);
+
+        SeAcabotxt = miDialog.findViewById(R.id.SeAcabotxt);
+        Hasmatadotxt = miDialog.findViewById(R.id.Hasmatadotxt);
+        Numerotxt = miDialog.findViewById(R.id.Numerotxt);
+
+        Reintentar = miDialog.findViewById(R.id.Reintentar);
+        IrMenu = miDialog.findViewById(R.id.IrMenu);
+        Puntajes = miDialog.findViewById(R.id.Puntajes);
+
+        String zombies = String.valueOf(contador);
+        Numerotxt.setText(zombies);
+
+        miDialog.show();
+
+
+
+
+
+
 
     }
 }
