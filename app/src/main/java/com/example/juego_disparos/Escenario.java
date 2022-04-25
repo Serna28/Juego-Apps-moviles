@@ -217,6 +217,7 @@ public class Escenario extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Escenario.this,Menu.class));
+                finish();
 
             }
         });
@@ -224,6 +225,9 @@ public class Escenario extends AppCompatActivity {
         Puntajes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                startActivity(new Intent(Escenario.this,Puntajes.class));
+
 
 
             }
@@ -244,7 +248,7 @@ public class Escenario extends AppCompatActivity {
         JUGADORES.child(user.getUid()).updateChildren(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
-                Toast.makeText(Escenario.this, "Puntaje Actulizado", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Escenario.this, "Puntajes", Toast.LENGTH_SHORT).show();
 
             }
         });

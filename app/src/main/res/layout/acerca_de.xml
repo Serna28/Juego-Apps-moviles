@@ -4,15 +4,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center">
-    
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="400dp"
         android:layout_height="300dp"
+        android:background="#CCCCCC"
         android:orientation="vertical">
-        
+
         <TextView
-            android:layout_width=""
-            android:layout_height=""
+            android:id="@+id/Desarroladotxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/Desarroladotxt"
+            android:textSize="25sp">
+
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/creadores"></androidx.appcompat.widget.AppCompatImageView>
+
+
+
+
+        <Button
+            android:id="@+id/Ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/Ok">
+
+        </Button>
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>

@@ -3,6 +3,7 @@ package com.example.juego_disparos;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -74,27 +75,53 @@ public class Menu extends AppCompatActivity {
             String NombreS = nombre.getText().toString();
             String ZombiesS = Zombies.getText().toString();
 
-            intent.putExtra("UID",UidS);
-            intent.putExtra("NOMBRE",NombreS);
-            intent.putExtra("ZOMBIE",ZombiesS);
+            intent.putExtra("UID", UidS);
+            intent.putExtra("NOMBRE", NombreS);
+            intent.putExtra("ZOMBIE", ZombiesS);
 
             startActivity(intent);
-            Toast.makeText(Menu.this,"Enviando",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Menu.this, "Enviando", Toast.LENGTH_SHORT).show();
 
 
         });
 
         BtnPuntuaciones.setOnClickListener(view -> {
-            Intent intent = new Intent(Menu.this,Puntajes.class);
+            Intent intent = new Intent(Menu.this, Puntajes.class);
             startActivity(intent);
-            Toast.makeText(Menu.this,"Puntuaciones",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Menu.this, "Puntuaciones disponibles desde el Menú", Toast.LENGTH_SHORT).show();
 
         });
 
-        BtnAcercaDe.setOnClickListener(view -> Toast.makeText(Menu.this,"Acerca de nosotros",Toast.LENGTH_SHORT).show());
+        BtnAcercaDe.setOnClickListener(view -> {
+            //Toast.makeText(Menu.this, "Acerca de nosotros", Toast.LENGTH_SHORT).show();
+
+            Acercade();
 
 
+
+        });
     }
+
+    private void Acercade() {
+        TextView Desarroladotxt,Devtxt;
+        Button Ok;
+
+        dialog.setContentView(R.layout.acerca_de);
+
+        Desarroladotxt = dialog.findViewById(R.id.Desarroladotxt);
+        Ok = dialog.findViewById(R.id.Ok);
+
+        Ok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+    }
+
+
     @Override
     protected void onStart()
     {
