@@ -12,6 +12,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        
+        <TextView
+            android:id="@+id/TvAlto"
+            android:textColor="@color/white"
+            android:text="@string/TvAlto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/TvAncho"
+            android:textColor="@color/white"
+            android:text="@string/TvAncho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
 
         <!--Info  -->
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -24,6 +42,7 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:layout_marginStart="15dp"
                 android:src="@drawable/glock">
 
 
@@ -83,8 +102,8 @@
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/IvZombie"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:src="@drawable/zombienormal">
 
             </androidx.appcompat.widget.AppCompatImageView>
