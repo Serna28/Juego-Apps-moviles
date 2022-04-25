@@ -13,7 +13,7 @@
     <string name="ContrasenaLogin">Contrasena</string>
     <string name="BtnLogin">Ingreso</string>
 
-    <string name="Mipuntunaciontxt">Mi Puntunación</string>
+    <string name="Mipuntunaciontxt">Mi Puntuación</string>
     <string name="Zombies">  </string>
     <string name="uid">  </string>
     <string name="correo">  </string>
@@ -27,6 +27,10 @@
 
     <string name="BtnCerrar">Cerrar Sesión</string>
 
+    <string name="Desarroladotxt">Desarollado por</string>
+    <string name="Devtxt">Nombre</string>
+    <string name="Ok">Ok</string>
+
 
     <string name="TvContador"> 0 </string>
     <string name="TvNombre"> --- </string>
@@ -34,13 +38,18 @@
 
     <string name="TvAncho"> -- </string>
     <string name="TvAlto"> -- </string>
-    
+
     <string name="SeAcabotxt"> Se acabó el tiempo </string>
     <string name="Hasmatadotxt"> Has Matado </string>
     <string name="Numerotxt"> -- </string>
     <string name="Reintentar"> Reintentar </string>
     <string name="IrMenu"> Menú </string>
     <string name="Puntajes"> Ver Puntaje </string>
+
+
+    <string name="NombreJugador">Nombre</string>
+    <string name="CorreoJugador">Correo</string>
+    <string name="PuntajeJugador">Puntaje</string>
 
 
 

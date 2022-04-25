@@ -225,6 +225,7 @@ public class Escenario extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
             }
         });
 

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Juego_Disparos">
         <activity
+            android:name=".Puntajes"
+            android:exported="false" />
+        <activity
             android:name=".gameover"
             android:exported="false" />
         <activity

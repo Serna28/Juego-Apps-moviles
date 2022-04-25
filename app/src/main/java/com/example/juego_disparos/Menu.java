@@ -1,5 +1,6 @@
 package com.example.juego_disparos;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -26,6 +27,8 @@ public class Menu extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference Jugadores;
 
+    Dialog dialog;
+
 
 
     TextView Mipuntunaciontxt,uid,correo,nombre,Menutxt,Zombies;
@@ -43,6 +46,8 @@ public class Menu extends AppCompatActivity {
 
         firebaseDatabase = FirebaseDatabase.getInstance();
         Jugadores = firebaseDatabase.getReference("BaseDatos Jugadores");
+
+        dialog = new Dialog(Menu.this);
 
         Mipuntunaciontxt = findViewById(R.id.Mipuntuaciontxt);
         uid = findViewById(R.id.uid);
@@ -79,7 +84,12 @@ public class Menu extends AppCompatActivity {
 
         });
 
-        BtnPuntuaciones.setOnClickListener(view -> Toast.makeText(Menu.this,"Puntuaciones",Toast.LENGTH_SHORT).show());
+        BtnPuntuaciones.setOnClickListener(view -> {
+            Intent intent = new Intent(Menu.this,Puntajes.class);
+            startActivity(intent);
+            Toast.makeText(Menu.this,"Puntuaciones",Toast.LENGTH_SHORT).show();
+
+        });
 
         BtnAcercaDe.setOnClickListener(view -> Toast.makeText(Menu.this,"Acerca de nosotros",Toast.LENGTH_SHORT).show());
 
