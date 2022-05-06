@@ -8,9 +8,12 @@ import android.content.Intent;
 import android.graphics.Point;
 import android.graphics.Typeface;
 import android.media.Image;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.provider.MediaStore;
 import android.view.Display;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +31,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.Random;
+
 
 public class Escenario extends AppCompatActivity {
 
@@ -87,13 +91,17 @@ public class Escenario extends AppCompatActivity {
         TimeOut();
 
         //Al Clickear la iamgen
+
         IvZombie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                MediaPlayer sonidito = MediaPlayer.create(getApplicationContext(),R.raw.uh);
 
                 //Cambia la imagen del zombie normal al zombie mongolo
 
                 if (!GameOver) {
+                    //SOnido pium piu piu colicos malos
+                    sonidito.start();
 
                     contador++;
                     TvContador.setText(String.valueOf(contador));
@@ -105,7 +113,7 @@ public class Escenario extends AppCompatActivity {
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-
+                            sonidito.stop();
                             IvZombie.setImageResource(R.drawable.zombienormal);
                             Movimiento();
 
