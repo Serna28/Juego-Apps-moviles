@@ -116,8 +116,6 @@ public class Escenario extends AppCompatActivity {
                             sonidito.stop();
                             IvZombie.setImageResource(R.drawable.zombienormal);
                             Movimiento();
-
-
                         }
                     }, 500);
 
