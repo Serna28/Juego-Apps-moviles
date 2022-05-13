@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.juego_disparos">
+    package="com.upb.juego_disparos">
 
     <application
         android:allowBackup="true"
@@ -10,25 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Juego_Disparos">
         <activity
-            android:name=".Puntajes"
+            android:name="com.upb.juego_disparos.Puntajes"
             android:exported="false" />
         <activity
-            android:name=".gameover"
+            android:name="com.upb.juego_disparos.gameover"
             android:exported="false" />
         <activity
-            android:name=".Escenario"
+            android:name="com.upb.juego_disparos.Escenario"
             android:exported="false" />
         <activity
-            android:name=".Menu"
+            android:name="com.upb.juego_disparos.Menu"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name="com.upb.juego_disparos.Login"
             android:exported="false" />
         <activity
-            android:name=".Registro"
+            android:name="com.upb.juego_disparos.Registro"
             android:exported="false" />
         <activity
-            android:name=".Splash"
+            android:name="com.upb.juego_disparos.Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,7 +37,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.upb.juego_disparos.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

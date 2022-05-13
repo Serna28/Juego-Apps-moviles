@@ -1,6 +1,5 @@
-package com.example.juego_disparos;
+package com.upb.juego_disparos;
 
-import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;

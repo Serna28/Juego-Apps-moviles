@@ -1,4 +1,4 @@
-package com.example.juego_disparos;
+package com.upb.juego_disparos;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.juego_disparos;
+package com.upb.juego_disparos;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,14 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Point;
-import android.graphics.Typeface;
-import android.media.Image;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
-import android.provider.MediaStore;
 import android.view.Display;
 import android.view.View;
 import android.widget.Button;
@@ -28,7 +24,6 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.Random;
 
